@@ -1,6 +1,6 @@
 Name:           noson-app
 Version:        3.9.7
-Release:        0
+Release:        1
 Summary:        SONOS device controller
 License:        GPL-3.0-or-later
 Group:          Productivity/Multimedia/Sound/Players
