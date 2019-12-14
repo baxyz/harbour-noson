@@ -17,7 +17,6 @@ BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Svg)
 BuildRequires:  pkgconfig(Qt5Xml)
-BuildRequires:  pkgconfig(noson) >= 1.16.2
 
 %description
 A controller for SONOS devices. It allows for browsing the music
@@ -28,15 +27,18 @@ queues and playlists can be managed, and playback be controlled.
 %setup -q -n %{name}-%{version}/noson-app
 
 %build
+mkdir -p build
+pushd build
 %cmake \
     -DCMAKE_BUILD_TYPE=Release \
-    -DBUILD_DEPENDENCIES=OFF \
-    -DBUILD_LIBNOSON=OFF \
-    -DBUILD_SAILFISHOS=ON
+    -DBUILD_SAILFISHOS=ON ..
 make
+popd
 
 %install
+pushd build
 %make_install -C build
+popd
 
 %files
 %{_bindir}/noson-app
