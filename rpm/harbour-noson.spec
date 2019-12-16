@@ -12,6 +12,8 @@ BuildRequires:  gcc-c++
 BuildRequires:  openssl-devel
 BuildRequires:  pkgconfig
 BuildRequires:  zlib-devel
+BuildRequires:  flac-devel
+BuildRequires:  pulseaudio-devel
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Qml)
