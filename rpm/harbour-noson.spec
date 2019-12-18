@@ -29,8 +29,8 @@ queues and playlists can be managed, and playback be controlled.
 %setup -q -n %{name}-%{version}/noson-app
 
 %build
-mkdir -p build
-pushd build
+mkdir -p build-%{_target_cpu}
+pushd build-%{_target_cpu}
 %cmake \
     -DCMAKE_BUILD_TYPE=Release \
     -DBUILD_SAILFISHOS=ON ..
@@ -38,7 +38,7 @@ make
 popd
 
 %install
-pushd build
+pushd build-%{_target_cpu}
 %make_install -C build
 popd
 
