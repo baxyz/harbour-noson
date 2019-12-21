@@ -43,10 +43,9 @@ pushd build-%{_target_cpu}
 popd
 
 %files
-%{_bindir}/noson-app
-%{_datadir}/applications/io.github.janbar.noson.desktop
+%{_bindir}/noson
+%{_datadir}/applications/noson.desktop
 %{_datadir}/icons/hicolor/
 %{_datadir}/metainfo/io.github.janbar.noson.appdata.xml
-%{_libdir}/noson/
 
 %changelog
