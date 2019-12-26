@@ -1,6 +1,6 @@
-Name:           noson-app
-Version:        4.1.0
-Release:        2
+Name:           harbour-noson
+Version:        4.1.1
+Release:        3
 Summary:        SONOS device controller
 License:        GPL-3.0-or-later
 Group:          Productivity/Multimedia/Sound/Players
@@ -43,8 +43,8 @@ pushd build-%{_target_cpu}
 popd
 
 %files
-%{_bindir}/noson
-%{_datadir}/applications/noson.desktop
+%{_bindir}/harbour-noson
+%{_datadir}/applications/harbour-noson.desktop
 %{_datadir}/icons/hicolor/
 %{_datadir}/metainfo/io.github.janbar.noson.appdata.xml
 
