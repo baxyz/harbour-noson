@@ -1,6 +1,6 @@
 Name:           harbour-noson
 Version:        4.1.1
-Release:        3
+Release:        4
 Summary:        SONOS device controller
 License:        GPL-3.0-or-later
 Group:          Productivity/Multimedia/Sound/Players
@@ -10,10 +10,8 @@ BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
 BuildRequires:  gcc-c++
 BuildRequires:  openssl-devel
-BuildRequires:  pkgconfig
 BuildRequires:  zlib-devel
-BuildRequires:  flac-devel
-BuildRequires:  pulseaudio-devel
+BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
 BuildRequires:  pkgconfig(Qt5Qml)
