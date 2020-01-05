@@ -1,6 +1,6 @@
 Name:           harbour-noson
-Version:        4.1.1
-Release:        4
+Version:        4.2.2
+Release:        5
 Summary:        SONOS device controller
 License:        GPL-3.0-or-later
 Group:          Productivity/Multimedia/Sound/Players
@@ -8,9 +8,11 @@ URL:            http://janbar.github.io/noson-app/index.html
 Source0:        https://github.com/janbar/noson-app/archive/%{version}.tar.gz
 BuildRequires:  cmake
 BuildRequires:  extra-cmake-modules
+BuildRequires:  git
 BuildRequires:  gcc-c++
 BuildRequires:  openssl-devel
 BuildRequires:  zlib-devel
+BuildRequires:  pulseaudio-devel
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Gui)
@@ -44,6 +46,5 @@ popd
 %{_bindir}/harbour-noson
 %{_datadir}/applications/harbour-noson.desktop
 %{_datadir}/icons/hicolor/
-%{_datadir}/metainfo/io.github.janbar.noson.appdata.xml
 
 %changelog
